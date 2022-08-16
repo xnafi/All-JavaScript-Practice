@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+    <link rel="stylesheet" href="Stylesheet/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="hello">hello world</h1>
+      <h5>hello dom</h5>
+    </header>
+    <main id="main">
+      <section>
+        <ul id="header">
+          <li class="lil">home</li>
+          <li class="lil">about</li>
+          <li class="lil">friends</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/dom.js"></script>
+    <script>
+      const li = document.getElementsByClassName("lil");
+      for (const lis of li) {
+        console.log(lis.innerText);
+      }
+    </script>
+  </body>
+</html>
